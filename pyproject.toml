@@ -1,0 +1,13 @@
+[project]
+name = "nanoformer"
+version = "0.1.0"
+description = "A small, from-scratch LLM with a modern architecture"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.1", "numpy"]
+
+[project.optional-dependencies]
+dev = ["pytest", "matplotlib"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
